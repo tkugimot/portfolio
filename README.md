@@ -1,7 +1,7 @@
 # portfolio
 
 > Toshimitsu Kugimoto's personal portfolio.
->> vist [here](https://yahoo.co.jp).
+> vist [here](https://yahoo.co.jp).
 
 ## Build Setup
 

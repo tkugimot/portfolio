@@ -2,7 +2,7 @@ import NuxtConfiguration from '@nuxt/config'
 
 const config: NuxtConfiguration = {
   head: {
-    title: 'nuxt-ts-app-tkugimot',
+    title: "Toshimitsu Kugimoto's portfolio",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -22,6 +22,10 @@ const config: NuxtConfiguration = {
       {
         set: '@fortawesome/free-solid-svg-icons',
         icons: ['fas']
+      },
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['fab']
       }
     ]
   }

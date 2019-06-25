@@ -1,17 +1,17 @@
 <template>
   <section>
-    <About />
+    <Education />
   </section>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import About from '~/components/About.vue'
+import Education from '~/components/Education.vue'
 
 @Component({
   components: {
-    About
+    Education
   }
 })
-export default class AboutPage extends Vue {}
+export default class EducationPage extends Vue {}
 </script>

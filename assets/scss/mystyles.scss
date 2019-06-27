@@ -1,0 +1,22 @@
+/* Import Bulma Utilities */
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+/* Variable changes go here */
+
+// Original Colors
+$yamabuki: #ffcc00;
+$dark-brown: #723008;
+$dark-orange: #ff6600;
+
+// Bulma Colors
+$tabs-link-active-color: $dark-orange;
+$tabs-toggle-link-active-border-color: $dark-orange;
+
+// $tabs-boxed-link-hover-background-color: orange;
+// $tabs-boxed-link-active-background-color: red;
+// $tabs-toggle-link-hover-background-color: red !important;
+// $tabs-toggle-link-active-background-color: red !important;
+
+/* Import the rest of Bulma */
+@import '~bulma';

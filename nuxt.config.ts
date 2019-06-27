@@ -12,6 +12,7 @@ const config: NuxtConfiguration = {
   },
   loading: { color: '#3B8070' },
   css: [
+    '~/assets/scss/mystyles.scss'
   ],
   modules: [
     '@nuxtjs/bulma',

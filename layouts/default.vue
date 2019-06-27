@@ -17,45 +17,27 @@
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
         <div class="container has-text-centered">
-          <figure class="image  is-128x128">
+            <figure class="image  is-128x128">
             <img class="is-rounded is-centered" src="toshi.jpg">
-          </figure>
-          <h3 class="subtitle is-4 has-text-weight-semibold">Hello, World :)</h3>
-          <h1 class="title is-2">I'm Toshimitsu Kugimoto.</h1>
-          <h3 class="subtitle is-4 has-text-weight-semibold"> Software Engineer.</h3>
+            </figure>
+            <h3 class="subtitle is-4 has-text-weight-semibold">Hello, World :)</h3>
+            <h1 class="title is-2">I'm Toshimitsu Kugimoto.</h1>
+            <h3 class="subtitle is-4 has-text-weight-semibold"> Software Engineer.</h3>
         </div>
 
         <div class="container">
-          <div class="social has-text-centered">
+            <div class="social has-text-centered">
             <font-awesome-icon :icon="['fab', 'facebook-f']" class="is-size-3 social-icon"/>
             <font-awesome-icon :icon="['fab', 'github']" class="is-size-3 social-icon"/>
             <font-awesome-icon :icon="['fab', 'instagram']" class="is-size-3 social-icon"/>
             <font-awesome-icon :icon="['fab', 'linkedin-in']" class="is-size-3 social-icon"/>
             <font-awesome-icon icon="sticky-note" class="is-size-3 social-icon"/>
-          </div>
+            </div>
         </div>
       </div>
 
-      <div class="hero-foot">
-        <nav class="tabs is-boxed is-fullwidth">
-          <div class="container">
-            <ul>
-              <li class="is-active">
-                <nuxt-link to="/">About</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/work">Work</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/education">Education</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/resume">Resume</nuxt-link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <Tab />
+      
     </section>
     <nuxt />
     <footer class="footer">
@@ -68,9 +50,20 @@
   </div>
 </template>
 
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+import Tab from '~/components/Tab.vue'
+
+@Component({
+  components: {
+    Tab
+  }
+})
+export default class Default extends Vue {}
+</script>
+
 <style lang="scss">
-$dark-orange: #ff8300;
-$dark-brown: #723008;
+@import "~assets/scss/mystyles.scss";
 
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
